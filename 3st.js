@@ -1,7 +1,8 @@
 alert(5 > 4); // true
-alert("apple" > "pineapple"); // false
-alert("2" > "12"); // false
-alert(undefined == null); // true
-alert(undefined === null); // false
+alert("apple" > "pineapple"); // false unicode-ის მიხედვით მოწმდება სტრიგნები
+alert("2" > "12"); // false როგორც სტრინგი ისე ედარებიან
+alert(undefined == null); // true ორი ტოლობა არ ამოწმებს ცვლადის ტიპს, ამოწმებს მარტო მნიშვნელობას
+alert(undefined === null); // false სამი ტოლობა მნიშვნელობასთან ერთად ამოწმებს ცვლადის ტიპს
 alert(null == " 0 "); // false
-alert(null === +"0"); // false
+alert(null === +"0"); // false +გადააქცევს 0-ს რიცხვ ნოლიანად მაგრამ ნალის ტიპის არის ობჯექტი
+                      // როცა ნოლის ტიპი იქნება ნამბერი.
